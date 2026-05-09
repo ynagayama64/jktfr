@@ -14,7 +14,6 @@
 - LINE / Google Classroom などで配布する短いURL
 - LINE / アプリ内ブラウザから外部ブラウザへ誘導
 - GAS本体への導線
-- 記録入力ページを開いた後のホーム画面追加案内
 
 ### rikujyo-app
 

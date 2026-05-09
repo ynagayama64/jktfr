@@ -103,9 +103,7 @@ h1 {
 }
 
 .intro p:last-child,
-.browser-guide p:last-child,
-.home-guide p:last-child,
-.home-steps p:last-child {
+.browser-guide p:last-child {
   margin-bottom: 0;
 }
 
@@ -127,8 +125,7 @@ h1 {
   letter-spacing: 0;
 }
 
-.browser-guide p,
-.home-guide p {
+.browser-guide p {
   margin-bottom: 8px;
 }
 
@@ -181,23 +178,6 @@ h1 {
   outline-offset: 3px;
 }
 
-.home-guide h2 {
-  font-size: 1rem;
-}
-
-.home-steps {
-  margin-top: 10px;
-  color: var(--muted);
-  font-size: 0.92rem;
-}
-
-.line-note {
-  margin: 14px 0 0;
-  color: var(--muted);
-  font-size: 0.86rem;
-  text-align: center;
-}
-
 .in-app-browser .browser-guide {
   order: 2;
 }
@@ -210,16 +190,8 @@ h1 {
   order: 4;
 }
 
-.in-app-browser .home-guide {
-  order: 5;
-}
-
-.in-app-browser .line-note {
-  order: 6;
-}
-
 .in-app-browser .footer-links {
-  order: 7;
+  order: 5;
 }
 
 .footer-links {
