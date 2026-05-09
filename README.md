@@ -12,7 +12,6 @@
 - LINE / Google Classroom などで配布する短いURL
 - アプリ内ブラウザ対策の案内
 - GAS本体への導線
-- ホーム画面追加の案内
 
 ### rikujyo-app
 

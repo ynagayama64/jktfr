@@ -76,8 +76,7 @@ h1 {
 }
 
 .panel,
-.warning,
-.notes {
+.warning {
   margin-top: 18px;
   padding: 20px;
   background: var(--surface);
@@ -92,8 +91,7 @@ h1 {
 }
 
 .intro p:last-child,
-.warning p:last-child,
-.notes li:last-child {
+.warning p:last-child {
   margin-bottom: 0;
 }
 
@@ -123,8 +121,7 @@ h1 {
 }
 
 .warning h2,
-.panel h2,
-.notes h2 {
+.panel h2 {
   margin-bottom: 10px;
   font-size: 1.18rem;
   line-height: 1.35;
@@ -178,36 +175,24 @@ h1 {
   font-size: 0.92rem;
 }
 
-.steps {
-  display: grid;
-  gap: 12px;
+.footer-links {
+  margin-top: 28px;
+  text-align: center;
 }
 
-.steps h3 {
-  margin-bottom: 2px;
+.footer-links a {
+  color: var(--muted);
+  font-size: 0.86rem;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
   color: var(--primary-dark);
-  font-size: 1rem;
-}
-
-.steps p {
-  margin-bottom: 0;
-}
-
-.notes ul {
-  margin: 0;
-  padding-left: 1.25em;
-}
-
-.notes li {
-  margin-bottom: 8px;
+  text-decoration: underline;
 }
 
 @media (min-width: 560px) {
   .page {
     padding-top: 48px;
-  }
-
-  .steps {
-    grid-template-columns: 1fr 1fr;
   }
 }
