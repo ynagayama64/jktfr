@@ -7,9 +7,9 @@
   --line: #dce3ee;
   --primary: #1769d1;
   --primary-dark: #0f55ad;
-  --warning-bg: #fff7e6;
-  --warning-line: #f0bf5a;
-  --warning-text: #5d3b00;
+  --notice-bg: #eef6ff;
+  --notice-line: #bfd9f5;
+  --notice-text: #153957;
   --shadow: 0 12px 32px rgba(23, 32, 51, 0.08);
 }
 
@@ -96,28 +96,13 @@ h1 {
 }
 
 .warning {
-  display: flex;
-  gap: 14px;
-  align-items: flex-start;
-  background: var(--warning-bg);
-  border-color: var(--warning-line);
-  color: var(--warning-text);
+  background: var(--notice-bg);
+  border-color: var(--notice-line);
+  color: var(--notice-text);
 }
 
 .warning[hidden] {
   display: none;
-}
-
-.warning-mark {
-  flex: 0 0 auto;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  background: var(--warning-line);
-  color: #2d1b00;
-  font-weight: 800;
 }
 
 .warning h2,
