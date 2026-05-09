@@ -3,10 +3,10 @@ const APP_URL = "https://script.google.com/a/macros/k-josai.com/s/AKfycbw9XmAR5b
 const IN_APP_BROWSER_PATTERNS = [
   /Line/i,
   /Instagram/i,
-  /FBAN|FBAV|FBIOS|FB_IAB|Facebook/i,
+  /Facebook|FBAN|FBAV|FBIOS|FB_IAB/i,
   /Twitter|X\/|TwitterAndroid|Twitter for iPhone/i,
   /MicroMessenger/i,
-  /GSA/i
+  /GSA|GoogleApp/i
 ];
 
 function isLikelyInAppBrowser(userAgent) {
@@ -14,11 +14,12 @@ function isLikelyInAppBrowser(userAgent) {
 }
 
 function showWarningIfNeeded() {
-  const warning = document.getElementById("browser-warning");
-  if (!warning) return;
+  const guide = document.getElementById("browser-guide");
+  if (!guide) return;
 
   if (isLikelyInAppBrowser(navigator.userAgent || "")) {
-    warning.hidden = false;
+    guide.hidden = false;
+    document.body.classList.add("in-app-browser");
   }
 }
 

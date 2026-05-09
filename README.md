@@ -1,8 +1,10 @@
 # jktfr
 
-城西大川越陸上部 記録管理アプリの静的入口ページです。
+城西川越陸上競技部 記録管理ページへの静的入口ページです。
 
 このリポジトリは、GAS本体の `rikujyo-app` とは完全に別のプロジェクトです。Apps Script、Google認証、DBアクセス、個人情報取得は行いません。
+
+このページは説明ページではなく、LINEやアプリ内ブラウザから Chrome / Safari / Edge などの外部ブラウザへ誘導するための交通整理ページです。
 
 ## 役割分離
 
@@ -10,8 +12,9 @@
 
 - 入口ページ
 - LINE / Google Classroom などで配布する短いURL
-- アプリ内ブラウザ対策の案内
+- LINE / アプリ内ブラウザから外部ブラウザへ誘導
 - GAS本体への導線
+- 記録入力ページを開いた後のホーム画面追加案内
 
 ### rikujyo-app
 
@@ -28,15 +31,23 @@
 - `app.js`: アプリ内ブラウザ判定とGAS本体URL
 - `README.md`: 公開手順と運用メモ
 
+## 画面方針
+
+- 生徒がLINEから開く前提で、読む量を少なくしています。
+- LINEなどのアプリ内ブラウザを検出した場合は、上部に外部ブラウザ案内を表示します。
+- 判定に失敗しても、記録入力ページを開くボタンは常に表示します。
+- Google認証や権限管理は入口ページでは行わず、GAS本体側で行います。
+- Cookie、localStorage、GAS API呼び出しは使用しません。
+
 ## APP_URL の変更場所
 
 GAS本体のURLは `app.js` の先頭にある `APP_URL` を変更してください。
 
 ```js
-const APP_URL = "https://script.google.com/macros/s/XXXXX/exec?view=record_input";
+const APP_URL = "https://script.google.com/a/macros/k-josai.com/s/AKfycbw9XmAR5blFNMaDJumlrXpslIJdMNyek8RD_0vdi8ASWSUXsxX9bw9vfhWTaQEMHAltIg/exec";
 ```
 
-`XXXXX` を実際のApps ScriptデプロイURLに差し替えます。
+URLを変更する場合は、この定数だけを差し替えます。
 
 ## GitHub Pages 公開手順
 

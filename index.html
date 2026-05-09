@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>城西大川越陸上部 記録管理 ページ</title>
+    <title>城西川越陸上競技部 記録管理ページ</title>
     <meta
       name="description"
-      content="城西大川越陸上部 記録管理アプリの初回設定用入口ページです。"
+      content="城西川越陸上競技部 記録管理ページへの入口です。"
     >
     <link rel="stylesheet" href="style.css">
   </head>
@@ -17,42 +17,69 @@
           <img
             class="team-logo"
             src="logotfc.png"
-            alt="城西大川越陸上競技部"
+            alt="城西川越陸上競技部"
           >
           <h1 id="page-title">
-            <span>城西大川越</span>
-            <span>陸上競技部</span>
+            <span>城西川越陸上競技部</span>
             <span>記録管理ページ</span>
           </h1>
         </div>
       </section>
 
-      <section class="panel intro" aria-label="このページについて">
-        <p>このページは初回設定用です。</p>
-        <p>記録入力画面を開いたあと、学校Googleアカウントでログインしてください。</p>
-        <p>別のGoogleアカウントで開いている場合は、学校アカウントに切り替えてください。</p>
-      </section>
-
-      <section id="browser-warning" class="warning" aria-live="polite" hidden>
-        <div>
+      <section id="browser-guide" class="browser-guide" aria-live="polite" hidden>
+        <div class="guide-main">
           <h2>Chrome または Safari で開いてください</h2>
-          <p>LINEなどのアプリ内ブラウザでは、Googleログインがうまく進まないことがあります。</p>
-          <p>画面右上のメニューから「ブラウザで開く」「Chromeで開く」「Safariで開く」を選んでください。</p>
+          <p>
+            LINEなどのアプリ内ブラウザでは、<br>
+            Googleログインが正常に動作しないことがあります。
+          </p>
+          <p>
+            右上メニューから<br>
+            「Chromeで開く」「Safariで開く」を選んでください。
+          </p>
+        </div>
+        <div class="guide-detail">
+          <p>iPhone: 右上または下部メニューから Safari で開く</p>
+          <p>Android: 右上メニューから Chrome で開く</p>
+          <p>PC版LINE: 「ブラウザで開く」を選ぶか、URLをコピーして Chrome / Edge / Safari で開く</p>
         </div>
       </section>
 
-      <section class="action-area" aria-label="記録入力画面">
-        <button id="open-app" class="primary-button" type="button">
-          記録入力画面を開く
-        </button>
-        <p class="helper-text">うまく開かない場合は、Chrome / Safariでこのページを開き直してください。</p>
+      <section class="panel intro" aria-label="Googleアカウントについて">
+        <p>
+          以下のページを開いた後、<br>
+          学校のGoogleアカウントでログインしてください。
+        </p>
+        <p>
+          別のGoogleアカウントで開いている場合は、<br>
+          学校アカウントへ切り替えてください。
+        </p>
       </section>
+
+      <section class="action-area" aria-label="記録入力ページ">
+        <button id="open-app" class="primary-button" type="button">
+          記録入力ページを開く
+        </button>
+      </section>
+
+      <section class="panel home-guide" aria-labelledby="home-guide-title">
+        <h2 id="home-guide-title">ホーム画面に追加</h2>
+        <p>記録入力ページを開いた後、ホーム画面に追加すると便利です。</p>
+        <div class="home-steps">
+          <p><strong>iPhone</strong>: 共有 → ホーム画面に追加</p>
+          <p><strong>Android</strong>: ︙ → ホーム画面に追加</p>
+        </div>
+      </section>
+
+      <p class="line-note">
+        LINEで開いている場合は、メニューから外部ブラウザで開いてください。
+      </p>
 
       <footer class="footer-links">
         <a
           href="https://script.google.com/a/macros/k-josai.com/s/AKfycbw9XmAR5blFNMaDJumlrXpslIJdMNyek8RD_0vdi8ASWSUXsxX9bw9vfhWTaQEMHAltIg/exec?view=record_manage"
         >
-          顧問ページ
+          顧問専用ページ
         </a>
       </footer>
     </main>

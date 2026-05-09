@@ -36,13 +36,15 @@ button {
 }
 
 .page {
+  display: flex;
+  flex-direction: column;
   width: min(100%, 680px);
   margin: 0 auto;
-  padding: 32px 18px 40px;
+  padding: 22px 16px 34px;
 }
 
 .hero {
-  padding: 12px 0 18px;
+  padding: 4px 0 14px;
 }
 
 h1,
@@ -54,13 +56,15 @@ p {
 
 h1 {
   margin-bottom: 0;
-  font-size: 1.35rem;
+  font-size: 1.58rem;
   line-height: 1.22;
   letter-spacing: 0;
+  text-align: center;
 }
 
 .brand {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 10px;
@@ -69,7 +73,7 @@ h1 {
 .team-logo {
   display: block;
   flex: 0 0 auto;
-  width: 96px;
+  width: 116px;
   height: auto;
 }
 
@@ -79,36 +83,43 @@ h1 {
 }
 
 .panel,
-.warning {
-  margin-top: 18px;
-  padding: 20px;
+.browser-guide {
+  margin-top: 14px;
+  padding: 18px;
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: 8px;
   box-shadow: var(--shadow);
 }
 
+.panel {
+  margin-top: 16px;
+  padding: 18px;
+}
+
 .intro p {
   margin-bottom: 10px;
-  font-size: 1.03rem;
+  font-size: 0.98rem;
 }
 
 .intro p:last-child,
-.warning p:last-child {
+.browser-guide p:last-child,
+.home-guide p:last-child,
+.home-steps p:last-child {
   margin-bottom: 0;
 }
 
-.warning {
+.browser-guide {
   background: var(--notice-bg);
   border-color: var(--notice-line);
   color: var(--notice-text);
 }
 
-.warning[hidden] {
+.browser-guide[hidden] {
   display: none;
 }
 
-.warning h2,
+.browser-guide h2,
 .panel h2 {
   margin-bottom: 10px;
   font-size: 1.18rem;
@@ -116,12 +127,25 @@ h1 {
   letter-spacing: 0;
 }
 
-.warning p {
+.browser-guide p,
+.home-guide p {
   margin-bottom: 8px;
 }
 
+.guide-main p {
+  font-weight: 600;
+}
+
+.guide-detail {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--notice-line);
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
 .action-area {
-  margin-top: 22px;
+  margin-top: 16px;
   text-align: center;
 }
 
@@ -157,10 +181,45 @@ h1 {
   outline-offset: 3px;
 }
 
-.helper-text {
-  margin: 12px 0 0;
+.home-guide h2 {
+  font-size: 1rem;
+}
+
+.home-steps {
+  margin-top: 10px;
   color: var(--muted);
   font-size: 0.92rem;
+}
+
+.line-note {
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+  text-align: center;
+}
+
+.in-app-browser .browser-guide {
+  order: 2;
+}
+
+.in-app-browser .action-area {
+  order: 3;
+}
+
+.in-app-browser .intro {
+  order: 4;
+}
+
+.in-app-browser .home-guide {
+  order: 5;
+}
+
+.in-app-browser .line-note {
+  order: 6;
+}
+
+.in-app-browser .footer-links {
+  order: 7;
 }
 
 .footer-links {
@@ -181,28 +240,30 @@ h1 {
 
 @media (min-width: 390px) {
   h1 {
-    font-size: 1.55rem;
-  }
-
-  .brand {
-    gap: 14px;
+    font-size: 1.72rem;
   }
 
   .team-logo {
-    width: 118px;
+    width: 126px;
   }
 }
 
 @media (min-width: 560px) {
   .page {
-    padding-top: 48px;
+    padding-top: 40px;
   }
 
   h1 {
-    font-size: 1.9rem;
+    font-size: 1.85rem;
+    text-align: left;
+  }
+
+  .brand {
+    flex-direction: row;
+    gap: 18px;
   }
 
   .team-logo {
-    width: 150px;
+    width: 138px;
   }
 }
