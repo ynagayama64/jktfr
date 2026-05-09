@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>城西大川越陸上部 記録管理 ページ</title>
+    <meta
+      name="description"
+      content="城西大川越陸上部 記録管理アプリの初回設定用入口ページです。"
+    >
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main class="page">
+      <section class="hero" aria-labelledby="page-title">
+        <p class="eyebrow">JKTFR</p>
+        <h1 id="page-title">城西大川越陸上部<br>記録管理 ページ</h1>
+        <p class="subtitle">Josai Kawagoe Track &amp; Field Records</p>
+      </section>
+
+      <section class="panel intro" aria-label="このページについて">
+        <p>このページは初回設定用です。</p>
+        <p>学校Googleアカウントでログインした Chrome / Safari などのブラウザで利用してください。</p>
+      </section>
+
+      <section id="browser-warning" class="warning" aria-live="polite" hidden>
+        <div class="warning-mark" aria-hidden="true">!</div>
+        <div>
+          <h2>アプリ内ブラウザで開かれている可能性があります</h2>
+          <p>LINEやアプリ内ブラウザでは、Googleログインがうまく動かないことがあります。</p>
+          <p>右上メニューから Chrome / Safari で開いてください。</p>
+        </div>
+      </section>
+
+      <section class="action-area" aria-label="記録入力画面">
+        <button id="open-app" class="primary-button" type="button">
+          記録入力画面を開く
+        </button>
+        <p class="helper-text">うまく開かない場合は、Chrome / Safariでこのページを開き直してください。</p>
+      </section>
+
+      <section class="panel" aria-labelledby="home-title">
+        <h2 id="home-title">ホーム画面に追加</h2>
+        <div class="steps">
+          <div>
+            <h3>iPhone</h3>
+            <p>共有ボタン →「ホーム画面に追加」</p>
+          </div>
+          <div>
+            <h3>Android</h3>
+            <p>︙メニュー →「ホーム画面に追加」</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="notes" aria-labelledby="notes-title">
+        <h2 id="notes-title">注意事項</h2>
+        <ul>
+          <li>この入口ページではログインや権限確認は行いません。</li>
+          <li>個人情報、Cookie、保存データは取得しません。</li>
+          <li>記録入力やランキング確認は、次に開くGAS本体で行います。</li>
+        </ul>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
