@@ -46,6 +46,13 @@ button {
   text-align: center;
 }
 
+.team-logo {
+  display: block;
+  width: min(88vw, 360px);
+  height: auto;
+  margin: 0 auto 18px;
+}
+
 .eyebrow {
   margin: 0 0 8px;
   color: var(--primary);
