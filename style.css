@@ -42,23 +42,7 @@ button {
 }
 
 .hero {
-  padding: 16px 0 20px;
-  text-align: center;
-}
-
-.team-logo {
-  display: block;
-  width: min(88vw, 360px);
-  height: auto;
-  margin: 0 auto 18px;
-}
-
-.eyebrow {
-  margin: 0 0 8px;
-  color: var(--primary);
-  font-size: 0.92rem;
-  font-weight: 700;
-  letter-spacing: 0;
+  padding: 12px 0 18px;
 }
 
 h1,
@@ -69,17 +53,29 @@ p {
 }
 
 h1 {
-  margin-bottom: 10px;
-  font-size: clamp(2rem, 10vw, 3.2rem);
-  line-height: 1.15;
+  margin-bottom: 0;
+  font-size: 1.35rem;
+  line-height: 1.22;
   letter-spacing: 0;
 }
 
-.subtitle {
-  margin-bottom: 0;
-  color: var(--muted);
-  font-size: 0.98rem;
-  font-weight: 600;
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.team-logo {
+  display: block;
+  flex: 0 0 auto;
+  width: 96px;
+  height: auto;
+}
+
+.brand h1 span {
+  display: block;
+  white-space: nowrap;
 }
 
 .panel,
@@ -183,8 +179,30 @@ h1 {
   text-decoration: underline;
 }
 
+@media (min-width: 390px) {
+  h1 {
+    font-size: 1.55rem;
+  }
+
+  .brand {
+    gap: 14px;
+  }
+
+  .team-logo {
+    width: 118px;
+  }
+}
+
 @media (min-width: 560px) {
   .page {
     padding-top: 48px;
+  }
+
+  h1 {
+    font-size: 1.9rem;
+  }
+
+  .team-logo {
+    width: 150px;
   }
 }
