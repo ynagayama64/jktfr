@@ -1,4 +1,4 @@
-const APP_URL = "https://script.google.com/a/macros/k-josai.com/s/AKfycbw9XmAR5blFNMaDJumlrXpslIJdMNyek8RD_0vdi8ASWSUXsxX9bw9vfhWTaQEMHAltIg/exec";
+const APP_URL = "https://script.google.com/a/macros/k-josai.com/s/AKfycbyyvr5WWonLRddKVmNgSRJX4xKk1TL5SRKzC10aL7f85xv1C4v4z7VUTk4uDQvlFll3RQ/exec";
 
 const IN_APP_BROWSER_PATTERNS = [
   /Line/i,
